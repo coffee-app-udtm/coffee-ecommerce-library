@@ -1,0 +1,9 @@
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\bin\Debug\CoffeeLibrary.dll
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\bin\Debug\CoffeeLibrary.pdb
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\obj\Debug\CoffeeLibrary.csproj.AssemblyReference.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\obj\Debug\CoffeeLibrary.csproj.CoreCompileInputs.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\obj\Debug\CoffeeLibrary.csproj.CopyComplete
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\obj\Debug\CoffeeLibrary.dll
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeLibrary\obj\Debug\CoffeeLibrary.pdb
