@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 
+using CoffeeLibrary;
 using CoffeeLibrary.Model;
 
 namespace UCProduct
@@ -29,7 +30,7 @@ namespace UCProduct
                 {
                     // Gán các giá trị của product cho các control
                     label_product_name.Text = _product.name;
-                    label_product_price.Text = _product.price.ToString("N0", VietnameseCulture) + " đ";
+                    label_product_price.Text = Util.formatVNCurrency(_product.price);
                     pictureBox_product_image.ImageLocation = _product.image;
                 }
             }
