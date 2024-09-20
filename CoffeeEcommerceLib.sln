@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeLibrary", "CoffeeLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCLogin", "UCLogin\UCLogin.csproj", "{49580448-301F-4D2C-958A-0C86D5F1AD42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCProduct", "UCProduct\UCProduct.csproj", "{F606C48A-88E9-4197-8197-29E29E164186}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{49580448-301F-4D2C-958A-0C86D5F1AD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49580448-301F-4D2C-958A-0C86D5F1AD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49580448-301F-4D2C-958A-0C86D5F1AD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F606C48A-88E9-4197-8197-29E29E164186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F606C48A-88E9-4197-8197-29E29E164186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F606C48A-88E9-4197-8197-29E29E164186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F606C48A-88E9-4197-8197-29E29E164186}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

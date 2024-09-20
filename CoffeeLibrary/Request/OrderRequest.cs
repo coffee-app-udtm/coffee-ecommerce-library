@@ -15,7 +15,7 @@ namespace CoffeeLibrary.Request
     {
         HttpClient client = new HttpClient();
 
-        public async Task<List<Order>> GetOrdersAsync()
+        public async Task<List<Order>> getOrdersAsync()
         {
             string url = Constant.API_URL + "/order";
             var response = await client.GetStringAsync(url);
