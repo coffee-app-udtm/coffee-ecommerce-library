@@ -13,7 +13,7 @@ namespace CoffeeLibrary.Request
     {
         HttpClient client = new HttpClient();
 
-        public async Task<List<Category>> getCategoriesAsync() { 
+        public async Task<List<Category>> GetCategoriesAsync() { 
             string url = Constant.API_URL + "/category";
             var response = await client.GetStringAsync(url);
 

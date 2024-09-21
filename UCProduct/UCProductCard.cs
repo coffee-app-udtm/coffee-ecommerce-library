@@ -30,7 +30,7 @@ namespace UCProduct
                 {
                     // Gán các giá trị của product cho các control
                     label_product_name.Text = _product.name;
-                    label_product_price.Text = Util.formatVNCurrency(_product.price);
+                    label_product_price.Text = Util.FormatVNCurrency(_product.price);
                     pictureBox_product_image.ImageLocation = _product.image;
                 }
             }

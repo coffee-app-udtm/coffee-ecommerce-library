@@ -50,6 +50,9 @@
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\ProductSize.cs" />
+    <Compile Include="Model\ProductTopping.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request\CategoryRequest.cs" />
     <Compile Include="Request\OrderRequest.cs" />

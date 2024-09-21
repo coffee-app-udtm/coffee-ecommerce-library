@@ -8,7 +8,7 @@ namespace CoffeeLibrary
 {
     public class Util
     {
-        public static string formatVNCurrency(decimal value)
+        public static string FormatVNCurrency(decimal value)
         {
             return value.ToString("N0") + " đ";
         }
