@@ -30,4 +30,30 @@ namespace CoffeeLibrary.Model
 
     }
 
+    public class OrderItem {
+        public string user_id { get; set; }
+        public int product_id { get; set; }
+        public int? size_id { get; set; }
+        public int quantity { get; set; }
+        public List<int> toppings { get; set; }
+        public decimal order_item_price { get; set; }
+    }
+
+    public class CreateOrder
+    {
+        public string order_id { get; set; }
+        public int user_id { get; set; }
+        public decimal total_payment { get; set; }
+        public string payment_method { get; set; }
+        public string order_type { get; set; }
+        public string order_note { get; set; }
+        public string order_status { get; set; }
+        public decimal shipping_cost { get; set; }
+        public string receiver_name { get; set; }
+        public string phone_number { get; set; }
+        public string address { get; set; }
+        public int store_id { get; set; }
+        public int? voucher_id { get; set; }
+        public List<OrderItem> order_items { get; set; }
+    }
 }
