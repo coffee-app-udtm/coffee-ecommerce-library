@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CoffeeLibrary.Model;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -56,6 +58,56 @@ namespace CoffeeLibrary.Request
 
             }
             catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<List<Cart>> GetCartsAsync(string userId)
+        {
+            try
+            {
+                string url = Constant.API_URL + "/cart/" + userId;
+                var response = await client.GetStringAsync(url);
+
+                if (response == null)
+                {
+                    return new List<Cart>();
+                }
+
+                JObject jsonResponse = JObject.Parse(response);
+
+                // Nullable
+                JArray dataArray = jsonResponse["data"] as JArray;
+
+                List<Cart> carts = dataArray?.ToObject<List<Cart>>() ?? new List<Cart>();
+
+                return carts;
+
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<bool> DeleteCartAsync(int id)
+        {
+
+            try
+            {
+                string url = Constant.API_URL + "/cart/" + id;
+                var response = await client.DeleteAsync(url);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                return false;
+
+            } catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

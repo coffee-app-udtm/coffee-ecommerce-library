@@ -1,0 +1,9 @@
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\bin\Debug\CoffeeEcommerceLib.exe.config
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\bin\Debug\CoffeeEcommerceLib.exe
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\bin\Debug\CoffeeEcommerceLib.pdb
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\obj\Debug\CoffeeEcommerceLib.csproj.AssemblyReference.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\obj\Debug\CoffeeEcommerceLib.Properties.Resources.resources
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\obj\Debug\CoffeeEcommerceLib.csproj.GenerateResource.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\obj\Debug\CoffeeEcommerceLib.csproj.CoreCompileInputs.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\obj\Debug\CoffeeEcommerceLib.exe
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\CoffeeEcommerceLib\obj\Debug\CoffeeEcommerceLib.pdb
