@@ -15,7 +15,7 @@ namespace CoffeeLibrary.Request
     {
         HttpClient client = new HttpClient();
 
-        public async Task<List<Order>> getOrdersAsync()
+        public async Task<List<Order>> GetOrdersAsync()
         {
             string url = Constant.API_URL + "/order";
             var response = await client.GetStringAsync(url);
@@ -40,6 +40,39 @@ namespace CoffeeLibrary.Request
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public async Task<Order> CreateOrderAsync(CreateOrder createOrderInfo)
+        {
+            string url = Constant.API_URL + "/order";
+
+            var jsonContent = new StringContent(
+                    Newtonsoft.Json.JsonConvert.SerializeObject(createOrderInfo),
+                    Encoding.UTF8,
+                    "application/json"
+                );
+            var response = await client.PostAsync(url, jsonContent);
+                
+
+            if (response == null)
+            {
+                return null;
+            }
+
+            try
+            {
+                string responseData = await response.Content.ReadAsStringAsync();
+                JObject jsonResponse = JObject.Parse(responseData);
+
+                Order order = jsonResponse["data"].ToObject<Order>();
+
+                return order;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
     }
 }

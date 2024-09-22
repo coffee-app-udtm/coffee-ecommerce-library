@@ -59,6 +59,7 @@
     <Compile Include="Request\CategoryRequest.cs" />
     <Compile Include="Request\OrderRequest.cs" />
     <Compile Include="Request\ProductRequest.cs" />
+    <Compile Include="Request\UserRequest.cs" />
     <Compile Include="Util.cs" />
   </ItemGroup>
   <ItemGroup>

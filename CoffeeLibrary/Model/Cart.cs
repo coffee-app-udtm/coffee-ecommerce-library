@@ -23,9 +23,13 @@ namespace CoffeeLibrary.Model
 
         public string display_info
         {
-            get { 
+            get {
+                string _size_name = size_name != null ? size_name : string.Empty;
 
-                return $"{product_name} - {size_name} - x{quantity} - +{toppings.Count} topping - ({Util.FormatVNCurrency(order_item_price)})"; 
+                int topping_count = toppings != null ? toppings.Count : 0;
+
+
+                return $"{product_name} - {_size_name} - x{quantity} - +{topping_count} topping - ({Util.FormatVNCurrency(order_item_price)})"; 
             }
         }
     }
