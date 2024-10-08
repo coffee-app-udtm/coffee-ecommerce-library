@@ -1,0 +1,6 @@
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCLogin\bin\Debug\UCLogin.dll
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCLogin\bin\Debug\UCLogin.pdb
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCLogin\obj\Debug\UCLogin.csproj.AssemblyReference.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCLogin\obj\Debug\UCLogin.csproj.CoreCompileInputs.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCLogin\obj\Debug\UCLogin.dll
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCLogin\obj\Debug\UCLogin.pdb

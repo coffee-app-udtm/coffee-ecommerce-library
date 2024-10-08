@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Newtonsoft.Json.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
+using Newtonsoft.Json;
 
 namespace CoffeeLibrary.Request
 {
     public class OrderRequest
     {
         HttpClient client = new HttpClient();
+
 
         public async Task<List<Order>> GetOrdersAsync()
         {
@@ -35,6 +39,30 @@ namespace CoffeeLibrary.Request
                 List<Order> orders = dataArray?.ToObject<List<Order>>() ?? new List<Order>();
 
                 return orders;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<Order> GetOrderAsync(string orderId)
+        {
+            string url = Constant.API_URL + "/order/" + orderId;
+            var response = await client.GetStringAsync(url);
+
+            if (response == null)
+            {
+                return null;
+            }
+
+            try
+            {
+                JObject jsonResponse = JObject.Parse(response);
+
+                Order order = jsonResponse["data"].ToObject<Order>();
+
+                return order;
             }
             catch (Exception ex)
             {
@@ -73,6 +101,31 @@ namespace CoffeeLibrary.Request
                 throw new Exception(ex.Message);
             }
 
+        }
+
+        public async Task<bool> UpdateOrderStatusAsync(Order order, string newStatus)
+        {
+            try
+            {
+                if (order == null) return false;
+
+
+                // Update to db
+                string url = Constant.API_URL + "/order/edit-status/" + order.id;
+
+                var orderStatusUpdate = new { order_status = newStatus };
+                string json = JsonConvert.SerializeObject(orderStatusUpdate);
+
+                StringContent content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await client.PutAsync(url, content);
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

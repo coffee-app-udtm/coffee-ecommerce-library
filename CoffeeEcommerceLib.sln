@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCLogin", "UCLogin\UCLogin.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCProduct", "UCProduct\UCProduct.csproj", "{F606C48A-88E9-4197-8197-29E29E164186}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCOrder", "UCOrder\UCOrder.csproj", "{DC12CB33-8394-41A9-8703-31F98DD104BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F606C48A-88E9-4197-8197-29E29E164186}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F606C48A-88E9-4197-8197-29E29E164186}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F606C48A-88E9-4197-8197-29E29E164186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC12CB33-8394-41A9-8703-31F98DD104BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC12CB33-8394-41A9-8703-31F98DD104BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC12CB33-8394-41A9-8703-31F98DD104BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC12CB33-8394-41A9-8703-31F98DD104BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

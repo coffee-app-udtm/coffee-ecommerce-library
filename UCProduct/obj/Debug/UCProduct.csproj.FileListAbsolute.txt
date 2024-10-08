@@ -1,12 +1,12 @@
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.AssemblyReference.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.UCProductCard.resources
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.GenerateResource.cache
+C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.CoreCompileInputs.cache
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\bin\Debug\UCProduct.dll
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\bin\Debug\UCProduct.pdb
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\bin\Debug\CoffeeLibrary.dll
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\bin\Debug\Newtonsoft.Json.dll
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\bin\Debug\CoffeeLibrary.pdb
-C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.AssemblyReference.cache
-C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.UCProductCard.resources
-C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.GenerateResource.cache
-C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.CoreCompileInputs.cache
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.csproj.CopyComplete
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.dll
 C:\Users\84359\Documents\Projects\Winform\CoffeeEcommerceLib\UCProduct\obj\Debug\UCProduct.pdb
