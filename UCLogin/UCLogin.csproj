@@ -57,5 +57,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UCLoginAdmin.resx">
+      <DependentUpon>UCLoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLoginStore.resx">
+      <DependentUpon>UCLoginStore.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeLibrary\CoffeeLibrary.csproj">
+      <Project>{d451866a-9a68-4c0d-951c-11382e486a22}</Project>
+      <Name>CoffeeLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
