@@ -1,0 +1,12 @@
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\bin\Debug\UCTopping.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\bin\Debug\UCTopping.pdb
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\bin\Debug\CoffeeLibrary.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\bin\Debug\Newtonsoft.Json.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\bin\Debug\CoffeeLibrary.pdb
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.csproj.AssemblyReference.cache
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.UCToppingList.resources
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.csproj.GenerateResource.cache
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.csproj.CoreCompileInputs.cache
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.csproj.CopyComplete
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCTopping\obj\Debug\UCTopping.pdb
