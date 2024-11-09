@@ -1,0 +1,12 @@
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\bin\Debug\UCCategory.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\bin\Debug\UCCategory.pdb
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\bin\Debug\CoffeeLibrary.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\bin\Debug\Newtonsoft.Json.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\bin\Debug\CoffeeLibrary.pdb
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.csproj.AssemblyReference.cache
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.UCCategoryList.resources
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.csproj.GenerateResource.cache
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.csproj.CoreCompileInputs.cache
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.csproj.CopyComplete
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.dll
+C:\Users\84359\Documents\Projects\Winform-Coffee\CoffeeEcommerceLib\UCCategory\obj\Debug\UCCategory.pdb
