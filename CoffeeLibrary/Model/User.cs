@@ -14,6 +14,10 @@ namespace CoffeeLibrary.Model
         public string password { get; set; }
         public string email { get; set; }
         public string phone_number { get; set; }
+        public string account_type { get; set; }
+
+        public int role_id { get; set; }
+
         public string avatar { get; set; }
     }
 }

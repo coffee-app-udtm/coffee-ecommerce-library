@@ -56,5 +56,34 @@ namespace CoffeeLibrary.Request
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<List<User>> GetUsersAsync()
+        {
+            string url = Constant.API_URL + "/user";
+
+            var response = await client.GetStringAsync(url);
+
+            if (response == null)
+            {
+                return null;
+            }
+
+            try
+            {
+                JObject jsonResponse = JObject.Parse(response);
+
+                // Nullable
+                JArray dataArray = jsonResponse["data"] as JArray;
+
+                List<User> users = dataArray?.ToObject<List<User>>() ?? new List<User>();
+
+                return users;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
