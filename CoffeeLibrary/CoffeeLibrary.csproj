@@ -78,6 +78,7 @@
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductSize.cs" />
     <Compile Include="Model\ProductTopping.cs" />
+    <Compile Include="Model\Revenue.cs" />
     <Compile Include="Model\Size.cs" />
     <Compile Include="Model\Store.cs" />
     <Compile Include="Model\Topping.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Request\CategoryRequest.cs" />
     <Compile Include="Request\OrderRequest.cs" />
     <Compile Include="Request\ProductRequest.cs" />
+    <Compile Include="Request\RevenueRequest.cs" />
     <Compile Include="Request\SizeRequest.cs" />
     <Compile Include="Request\ToppingRequest.cs" />
     <Compile Include="Request\UserRequest.cs" />

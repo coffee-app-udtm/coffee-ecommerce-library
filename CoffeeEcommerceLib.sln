@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCSize", "UCSize\UCSize.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCTopping", "UCTopping\UCTopping.csproj", "{C1F0A28F-516F-4CBB-9309-7AC5D732DE5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCUser", "UCUser\UCUser.csproj", "{3D5B035F-36A8-4ABE-9478-A8146CC352A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UCRevenue", "UCRevenue\UCRevenue.csproj", "{B94AE232-1B39-47AE-9DA4-6EF3986803CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,10 +59,10 @@ Global
 		{C1F0A28F-516F-4CBB-9309-7AC5D732DE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1F0A28F-516F-4CBB-9309-7AC5D732DE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1F0A28F-516F-4CBB-9309-7AC5D732DE5E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3D5B035F-36A8-4ABE-9478-A8146CC352A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3D5B035F-36A8-4ABE-9478-A8146CC352A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3D5B035F-36A8-4ABE-9478-A8146CC352A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3D5B035F-36A8-4ABE-9478-A8146CC352A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B94AE232-1B39-47AE-9DA4-6EF3986803CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B94AE232-1B39-47AE-9DA4-6EF3986803CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B94AE232-1B39-47AE-9DA4-6EF3986803CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B94AE232-1B39-47AE-9DA4-6EF3986803CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
