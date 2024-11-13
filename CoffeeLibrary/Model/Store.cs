@@ -33,4 +33,17 @@ namespace CoffeeLibrary.Model
 
         public string password { get; set; }
     }
+
+    public class StoreAccount
+    {
+        public int id { get; set; }
+        public string store_login_name { get; set; }
+
+        public string password { get; set; }
+
+        public int store_id { get; set; }
+
+        public string account_type { get; set; }
+
+    }
 }

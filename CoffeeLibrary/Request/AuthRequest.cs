@@ -89,5 +89,119 @@ namespace CoffeeLibrary.Request
                 throw new Exception(ex.Message);
             }
         }
+
+        public async Task<List<StoreAccount>> GetStoreAccountsAsync()
+        {
+            string url = Constant.API_URL + "/auth/store-account";
+
+
+            var response = await client.GetStringAsync(url);
+
+            if (response == null)
+            {
+                return new List<StoreAccount>();
+            }
+
+            try
+            {
+                JObject jsonResponse = JObject.Parse(response);
+
+                // Nullable
+                JArray dataArray = jsonResponse["data"] as JArray;
+
+                List<StoreAccount> accounts = dataArray?.ToObject<List<StoreAccount>>() ?? new List<StoreAccount>();
+
+                return accounts;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<StoreAccount> CreateStoreAccountAsync(StoreAccount storeAccount)
+        {
+            try
+            {
+                string url = Constant.API_URL + "/auth/create-store-account";
+
+                // Send data
+                var jsonContent = new StringContent(
+                    Newtonsoft.Json.JsonConvert.SerializeObject(storeAccount),
+                    Encoding.UTF8,
+                    "application/json");
+
+                var response = await client.PostAsync(url, jsonContent);
+
+                if (response == null)
+                {
+                    return null;
+                }
+
+                string responseData = await response.Content.ReadAsStringAsync();
+                JObject jsonResponse = JObject.Parse(responseData);
+
+                StoreAccount account = jsonResponse["data"].ToObject<StoreAccount>();
+
+                return account;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<StoreAccount> UpdateStoreAccountAsync(StoreAccount storeAccount)
+        {
+            try
+            {
+                string url = Constant.API_URL + "/auth/edit-store-account";
+
+                // Send data
+                var jsonContent = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(storeAccount), Encoding.UTF8, "application/json");
+
+                var response = await client.PutAsync(url, jsonContent);
+
+                if (response == null)
+                {
+                    return null;
+                }
+
+                string responseData = await response.Content.ReadAsStringAsync();
+                JObject jsonResponse = JObject.Parse(responseData);
+
+                StoreAccount updatedStoreAccount = jsonResponse["data"].ToObject<StoreAccount>();
+
+                return updatedStoreAccount;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<bool> DeleteStoreAccountAsync(int id)
+        {
+            try
+            {
+                string url = Constant.API_URL + "/auth/delete-store-account/" + id;
+
+                var response = await client.DeleteAsync(url);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                return false;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
