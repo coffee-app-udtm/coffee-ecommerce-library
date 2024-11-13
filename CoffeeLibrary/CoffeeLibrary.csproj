@@ -91,6 +91,7 @@
     <Compile Include="Request\ProductRequest.cs" />
     <Compile Include="Request\RevenueRequest.cs" />
     <Compile Include="Request\SizeRequest.cs" />
+    <Compile Include="Request\StoreRequest.cs" />
     <Compile Include="Request\ToppingRequest.cs" />
     <Compile Include="Request\UserRequest.cs" />
     <Compile Include="Util.cs" />

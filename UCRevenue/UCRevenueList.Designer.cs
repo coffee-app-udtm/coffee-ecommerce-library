@@ -38,22 +38,26 @@
             this.radioButton_Month = new System.Windows.Forms.RadioButton();
             this.radioButton_Day = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView_revenue = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button_export_excel = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label_total_revenue = new System.Windows.Forms.Label();
-            this.button_export_excel = new System.Windows.Forms.Button();
+            this.comboBox_stores = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_revenue)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.comboBox_stores);
             this.panel4.Controls.Add(this.button_filter);
             this.panel4.Controls.Add(this.textBox_Year);
             this.panel4.Controls.Add(this.dateTimePicker_Month);
@@ -76,7 +80,7 @@
             this.button_filter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button_filter.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button_filter.Location = new System.Drawing.Point(10, 262);
+            this.button_filter.Location = new System.Drawing.Point(10, 314);
             this.button_filter.Name = "button_filter";
             this.button_filter.Size = new System.Drawing.Size(313, 40);
             this.button_filter.TabIndex = 5;
@@ -158,17 +162,6 @@
             this.panel1.Size = new System.Drawing.Size(874, 567);
             this.panel1.TabIndex = 15;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button_export_excel);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label_total_revenue);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(874, 56);
-            this.panel2.TabIndex = 0;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dataGridView_revenue);
@@ -190,6 +183,29 @@
             this.dataGridView_revenue.Size = new System.Drawing.Size(874, 511);
             this.dataGridView_revenue.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button_export_excel);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label_total_revenue);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(874, 56);
+            this.panel2.TabIndex = 0;
+            // 
+            // button_export_excel
+            // 
+            this.button_export_excel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_export_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_export_excel.Location = new System.Drawing.Point(760, 14);
+            this.button_export_excel.Name = "button_export_excel";
+            this.button_export_excel.Size = new System.Drawing.Size(98, 29);
+            this.button_export_excel.TabIndex = 26;
+            this.button_export_excel.Text = "Xuất Excel";
+            this.button_export_excel.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -210,17 +226,22 @@
             this.label_total_revenue.TabIndex = 24;
             this.label_total_revenue.Text = "0 đ";
             // 
-            // button_export_excel
+            // comboBox_stores
             // 
-            this.button_export_excel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_export_excel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_export_excel.Location = new System.Drawing.Point(760, 14);
-            this.button_export_excel.Name = "button_export_excel";
-            this.button_export_excel.Size = new System.Drawing.Size(98, 29);
-            this.button_export_excel.TabIndex = 26;
-            this.button_export_excel.Text = "Xuất Excel";
-            this.button_export_excel.UseVisualStyleBackColor = true;
+            this.comboBox_stores.FormattingEnabled = true;
+            this.comboBox_stores.Location = new System.Drawing.Point(123, 261);
+            this.comboBox_stores.Name = "comboBox_stores";
+            this.comboBox_stores.Size = new System.Drawing.Size(200, 24);
+            this.comboBox_stores.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 264);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Doanh thu theo";
             // 
             // UCRevenueList
             // 
@@ -233,10 +254,10 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_revenue)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -259,5 +280,7 @@
         private System.Windows.Forms.Button button_export_excel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_total_revenue;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox_stores;
     }
 }

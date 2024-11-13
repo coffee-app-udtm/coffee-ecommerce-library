@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 using CoffeeLibrary.Request;
 using RevenueModel = CoffeeLibrary.Model.Revenue;
+using StoreModel = CoffeeLibrary.Model.Store;
+
 using CoffeeLibrary;
 
 namespace UCRevenue
@@ -17,6 +19,7 @@ namespace UCRevenue
     public partial class UCRevenueList : UserControl
     {
         private int storeId = 0;
+        private bool isAdmin = false;
 
         public UCRevenueList()
         {
@@ -30,9 +33,11 @@ namespace UCRevenue
         }
 
         // Gọi từ parent
-        public void RenderStoreRevenue(int storeId) 
+        public async void RenderStoreRevenue(int storeId) 
         {
             this.storeId = storeId;
+
+            await RenderStoresCombobox();
 
             if (this.radioButton_Day.Checked)
             {
@@ -80,8 +85,12 @@ namespace UCRevenue
         }
 
         // Gọi từ parent
-        public void RenderAdminRevenue()
+        public async void RenderAdminRevenue()
         {
+            this.isAdmin = true;
+
+            await RenderStoresCombobox();
+
             if (this.radioButton_Day.Checked)
             {
                 int month = dateTimePicker_Day.Value.Month;
@@ -189,7 +198,9 @@ namespace UCRevenue
                 }
                 else
                 {
-                    revenues = await revenueRequest.GetRevenuesAsync(day, month, year, 0);
+                    int storeIdCombobox = int.Parse(comboBox_stores.SelectedValue.ToString());
+
+                    revenues = await revenueRequest.GetRevenuesAsync(day, month, year, storeIdCombobox);
                 }
             }
             catch (Exception ex)
@@ -228,6 +239,39 @@ namespace UCRevenue
             }
 
             label_total_revenue.Text = Util.FormatVNCurrency(totalRevenue);
+        }
+
+        private async Task RenderStoresCombobox()
+        {
+            try
+            {
+                StoreRequest storeRequest = new StoreRequest();
+                List<StoreModel> stores = await storeRequest.GetStoresAsync();
+
+                // Add all store
+                StoreModel allStore = new StoreModel
+                {
+                    id = 0,
+                    store_name = "Tất cả cửa hàng"
+                };
+
+                stores.Insert(0, allStore);
+
+                // Render combobox
+                comboBox_stores.DataSource = stores;
+                comboBox_stores.DisplayMember = "store_name";
+                comboBox_stores.ValueMember = "id";
+
+                // Disable combobox if is admin
+                if (!this.isAdmin)
+                {
+                    comboBox_stores.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Button_export_excel_Click(object sender, EventArgs e)
