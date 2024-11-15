@@ -58,7 +58,7 @@ namespace CoffeeLibrary.Request
 
             // Create JSON object
             var json = new JObject();
-            json.Add("email", password);
+            json.Add("email", email);
             json.Add("password", password);
 
             // Convert JSON object to string

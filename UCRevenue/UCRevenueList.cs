@@ -19,6 +19,7 @@ namespace UCRevenue
     public partial class UCRevenueList : UserControl
     {
         private int storeId = 0;
+        private string accountType = null;
         private bool isAdmin = false;
 
         public UCRevenueList()
@@ -33,11 +34,31 @@ namespace UCRevenue
         }
 
         // Gọi từ parent
-        public async void RenderStoreRevenue(int storeId) 
+        public async void RenderStoreRevenue(int storeId, string accountType) 
         {
             this.storeId = storeId;
+            this.accountType = accountType;
 
             await RenderStoresCombobox();
+
+            // Nếu account type là nhân viên thì chỉ cho filter theo ngày
+            if (accountType == "Nhân viên")
+            {
+                this.radioButton_Day.Checked = true;
+
+                this.radioButton_Month.Enabled = false;
+                this.radioButton_Year.Enabled = false;
+                this.textBox_Year.Enabled = false;
+                this.comboBox_stores.Enabled = false;
+            } else
+            {
+                this.radioButton_Day.Checked = true;
+
+                this.radioButton_Month.Enabled = true;
+                this.radioButton_Year.Enabled = true;
+                this.textBox_Year.Enabled = true;
+                this.comboBox_stores.Enabled = true;
+            }
 
             if (this.radioButton_Day.Checked)
             {

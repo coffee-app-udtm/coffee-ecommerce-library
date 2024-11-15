@@ -43,7 +43,7 @@
             this.button_login.Location = new System.Drawing.Point(44, 200);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(336, 54);
-            this.button_login.TabIndex = 9;
+            this.button_login.TabIndex = 3;
             this.button_login.Text = "Đăng nhập";
             this.button_login.UseVisualStyleBackColor = false;
             // 
@@ -69,15 +69,16 @@
             // 
             this.textbox_password.Location = new System.Drawing.Point(44, 146);
             this.textbox_password.Name = "textbox_password";
+            this.textbox_password.PasswordChar = '*';
             this.textbox_password.Size = new System.Drawing.Size(336, 22);
-            this.textbox_password.TabIndex = 5;
+            this.textbox_password.TabIndex = 2;
             // 
             // textbox_login_name
             // 
             this.textbox_login_name.Location = new System.Drawing.Point(44, 64);
             this.textbox_login_name.Name = "textbox_login_name";
             this.textbox_login_name.Size = new System.Drawing.Size(336, 22);
-            this.textbox_login_name.TabIndex = 6;
+            this.textbox_login_name.TabIndex = 1;
             // 
             // UCLoginStore
             // 

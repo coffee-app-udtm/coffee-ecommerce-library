@@ -30,6 +30,7 @@ namespace CoffeeLibrary.Model
     public class StoreLogin : Store
     {
         public string store_login_name { get; set; }
+        public string account_type { get; set; }
 
         public string password { get; set; }
     }

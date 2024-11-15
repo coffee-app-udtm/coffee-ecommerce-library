@@ -54,8 +54,9 @@
             // 
             this.textbox_password.Location = new System.Drawing.Point(54, 133);
             this.textbox_password.Name = "textbox_password";
+            this.textbox_password.PasswordChar = '*';
             this.textbox_password.Size = new System.Drawing.Size(336, 22);
-            this.textbox_password.TabIndex = 1;
+            this.textbox_password.TabIndex = 2;
             // 
             // label1
             // 
@@ -83,7 +84,7 @@
             this.button_login.Location = new System.Drawing.Point(54, 187);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(336, 54);
-            this.button_login.TabIndex = 4;
+            this.button_login.TabIndex = 3;
             this.button_login.Text = "Đăng nhập";
             this.button_login.UseVisualStyleBackColor = false;
             // 
